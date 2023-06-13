@@ -31,15 +31,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UsesCase", "UsesCase", "{2C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaPaulita.Sales.UsesCase", "LaPaulita.UsesCase\LaPaulita.Sales.UsesCase.csproj", "{5AB5BF97-933F-411D-B9E0-5933F062A38F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaPaulita.Sales.Controllers", "LaPaulita.Sales.Controllers\LaPaulita.Sales.Controllers.csproj", "{FB0DE433-5144-491C-B6A3-43424179EDB1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaPaulita.Sales.Controllers", "LaPaulita.Sales.Controllers\LaPaulita.Sales.Controllers.csproj", "{FB0DE433-5144-491C-B6A3-43424179EDB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaPaulita.Sales.Presenters", "LaPaulita.Sales.Presenters\LaPaulita.Sales.Presenters.csproj", "{8B5C3381-6323-4676-87C5-544B9A037EA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaPaulita.Sales.Presenters", "LaPaulita.Sales.Presenters\LaPaulita.Sales.Presenters.csproj", "{8B5C3381-6323-4676-87C5-544B9A037EA5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UIs", "UIs", "{B8B9FFBE-1723-49B2-B51B-E2830ED3EF90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaPaulita.Sales.WebApi", "LaPaulita.Sales.WebApi\LaPaulita.Sales.WebApi.csproj", "{59AE1648-D183-4724-A7AC-47E27BD31C30}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{15860499-1A45-43D9-A29A-2CC1B7C6A2F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaPaulita.Sales.WebApi", "LaPaulita.Sales.WebApi\LaPaulita.Sales.WebApi.csproj", "{59AE1648-D183-4724-A7AC-47E27BD31C30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +69,6 @@ Global
 		{59AE1648-D183-4724-A7AC-47E27BD31C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59AE1648-D183-4724-A7AC-47E27BD31C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59AE1648-D183-4724-A7AC-47E27BD31C30}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15860499-1A45-43D9-A29A-2CC1B7C6A2F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15860499-1A45-43D9-A29A-2CC1B7C6A2F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15860499-1A45-43D9-A29A-2CC1B7C6A2F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15860499-1A45-43D9-A29A-2CC1B7C6A2F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -97,7 +91,6 @@ Global
 		{8B5C3381-6323-4676-87C5-544B9A037EA5} = {77E5E750-CFFF-4AFB-8683-E59FFA3EE310}
 		{B8B9FFBE-1723-49B2-B51B-E2830ED3EF90} = {E2A0EA68-E4C1-4F10-9B38-017F0F49088B}
 		{59AE1648-D183-4724-A7AC-47E27BD31C30} = {B8B9FFBE-1723-49B2-B51B-E2830ED3EF90}
-		{15860499-1A45-43D9-A29A-2CC1B7C6A2F7} = {B8B9FFBE-1723-49B2-B51B-E2830ED3EF90}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {958568F4-A469-4645-9B0D-348FB217030D}
