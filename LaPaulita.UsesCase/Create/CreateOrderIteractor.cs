@@ -1,5 +1,6 @@
 ﻿using LaPaulita.Sales.BusinessRules.Agregates;
 using LaPaulita.Sales.BusinessRules.Interface.Repositories;
+using LaPaulita.UsesCase.Specifications;
 
 namespace LaPaulita.Sales.UsesCase.Create
 {
@@ -42,7 +43,13 @@ namespace LaPaulita.Sales.UsesCase.Create
 
         private List<ValidationErrorDto> ValidateOrder(OrderHeaderDto createOrderDto)
         {
-            throw new NotImplementedException();
+            List<ValidationErrorDto> errors = new List<ValidationErrorDto>();
+
+            OrderHeaderSpecification validations = new OrderHeaderSpecification(createOrderDto);
+
+            errors = validations.IsValid();
+
+            return errors;
         }
     }
 }

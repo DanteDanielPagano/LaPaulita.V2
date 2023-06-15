@@ -7,7 +7,7 @@ namespace LaPaulita.UsesCase.Specifications
     {
         private partial void IsCountryValid()
         {
-            if (entity.ShippingCountry <= 0)
+            if (_entity.ShippingCountry <= 0)
             {
                 validationErrors.Add(new ValidationErrorDto
                 {

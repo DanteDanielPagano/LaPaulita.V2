@@ -1,13 +1,10 @@
-﻿using LaPaulita.Sales.BusinessRules.DTOs;
-using LaPaulita.Sales.BusinessRules.Interface;
-
-namespace LaPaulita.UsesCase.Specifications
+﻿namespace LaPaulita.UsesCase.Specifications
 {
     public partial class OrderHeaderSpecification : ISpecification<OrderHeaderDto>
     {
         private partial void IsAddressValid()
         {
-            if (string.IsNullOrEmpty(entity.ShippingAddress))
+            if (string.IsNullOrEmpty(_entity.ShippingAddress))
             {
                 validationErrors.Add(new ValidationErrorDto
                 {
@@ -16,7 +13,7 @@ namespace LaPaulita.UsesCase.Specifications
                 });
             }
 
-            if (entity.ShippingAddress.Length <= 50)
+            if (_entity.ShippingAddress.Length > 50)
             {
                 validationErrors.Add(new ValidationErrorDto
                 {

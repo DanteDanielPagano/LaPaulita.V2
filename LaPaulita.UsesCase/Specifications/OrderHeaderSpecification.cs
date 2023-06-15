@@ -1,17 +1,13 @@
-﻿using LaPaulita.Sales.BusinessRules.DTOs;
-using LaPaulita.Sales.BusinessRules.DTOs.ValidatorDTO;
-using LaPaulita.Sales.BusinessRules.Interface;
-
-namespace LaPaulita.UsesCase.Specifications
+﻿namespace LaPaulita.UsesCase.Specifications
 {
     public partial class OrderHeaderSpecification : ISpecification<OrderHeaderDto>
     {
         readonly List<ValidationErrorDto> validationErrors = new List<ValidationErrorDto>();
-        readonly OrderHeaderDto entity;
+        readonly OrderHeaderDto _entity;
 
         public OrderHeaderSpecification(OrderHeaderDto entity)
         {
-            this.entity = entity;
+            this._entity = entity;
         }
 
         public List<ValidationErrorDto> IsValid()

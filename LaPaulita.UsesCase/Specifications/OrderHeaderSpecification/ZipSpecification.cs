@@ -6,7 +6,7 @@ namespace LaPaulita.UsesCase.Specifications
     {
         private partial void IsZipValid()
         {
-            if (string.IsNullOrEmpty(entity.ShippingZip))
+            if (string.IsNullOrEmpty(_entity.ShippingZip))
             {
                 validationErrors.Add(new ValidationErrorDto
                 {
@@ -15,7 +15,7 @@ namespace LaPaulita.UsesCase.Specifications
                 });
             }
 
-            if (entity.ShippingZip.Length != 4)
+            if (_entity.ShippingZip.Length != 4)
             {
                 validationErrors.Add(new ValidationErrorDto
                 {
@@ -28,7 +28,7 @@ namespace LaPaulita.UsesCase.Specifications
             string pattern = @"^[0-9]+$";
 
             // Verificar si la entrada coincide con el patrón
-            bool isMatch = Regex.IsMatch(entity.ShippingZip, pattern);
+            bool isMatch = Regex.IsMatch(_entity.ShippingZip, pattern);
 
             if (!isMatch)
             {
